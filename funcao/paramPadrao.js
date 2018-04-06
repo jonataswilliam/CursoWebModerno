@@ -1,4 +1,4 @@
-// Estratégia 1 para gerar valor padrao.
+// Estratégia 1 para gerar valor padrao. Estrategia muito usada ainda para outros contextos que precisam de um valor padrao
 function soma1(a, b, c) {
     a = a || 1 //Se a for qualquer tipo de dado que dará false em uma comparação o valor após || é atribuído
     b = b || 1
