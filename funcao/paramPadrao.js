@@ -12,7 +12,7 @@ console.log (soma1(), soma1(4), soma1(1, 2, 3), soma1(0, 0, 0))
 
 // Estratégia 2, 3 e 4 para gerar valor padrao.
 function soma2(a, b, c) {
-    a = a !== undefined ? a : 1 // 2 estrategiaa
+    a = a !== undefined ? a : 1 // 2 estrategia
     b = 1 in arguments ? b : 1  // 3 estrategia. Verifica se existe um argumento em arguments[1]
     c = isNaN(c) ? 1 : c        // 4 estratégia. Verifica se o que foi passado é um numero ou nao. Essa seria a melhor estratégia para realizar a soma
     return a + b + c
