@@ -20,6 +20,5 @@ const soma = function (a, b) {
           console.log ('Opa')
         }
       }
-
-      new pessoa
+      
       pessoa.falar()
