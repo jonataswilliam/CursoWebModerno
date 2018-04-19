@@ -18,7 +18,10 @@ class Pessoa {
           }
       }
 
-      const p2 = criarPessoa('João')
+      const p2 = criarPessoa('José')
+      
+      p2.falar()
+      
 
 
       // Se atribuirmos essas classes ao clique do botão no body do document, veremos que utilizando o método de class nome será indefinido pois this varia nesta situação. Utilizando a função factory não, pois passamos a variável nome como parâmetro da funcao.
