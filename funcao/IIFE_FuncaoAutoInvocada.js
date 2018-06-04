@@ -10,4 +10,4 @@
 }) () // () já invoca na hora que é declarada
 
 // Tudo que crirmos dentro da funcao só estará disponível dentro dela.
-// Uma forma muito interessante para fugir do escopo Global
+// Uma forma muito interessante para fugir do escopo Global 
