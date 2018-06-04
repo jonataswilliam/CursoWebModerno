@@ -1,0 +1,50 @@
+// Notação Literal
+const obj1 = {}
+console.log(obj1)
+
+// Object em JS
+console.log(typeof Object, typeof new Object)
+const obj2 = new Object
+console.log(obj2)
+
+// Funcoes Construtoras
+function Produto(nome, preco, desc) {
+    // variavel nome é publica
+    this.nome = nome,
+    // Preco e Desc encapsulados
+    this.getPrecoComDesconto = () => {
+        return preco * (1 - desc)
+    }    
+}
+
+const p1 = new Produto('Caneta', 7.99, 0.15)
+const p2 = new Produto('Notebook', 2999.99, 0.20)
+console.log(p1.getPrecoComDesconto(), p2.getPrecoComDesconto())
+
+
+// Funcao Factory
+function criarFuncionario(nome, salarioBase, faltas) {
+    return {
+        nome,
+        salarioBase,
+        faltas,
+        getSalario() {
+            return (salarioBase / 30) * (30 - faltas)
+        }
+    }
+}
+
+const f1 = criarFuncionario('João', 7980, 4)
+const f2 = criarFuncionario('Maria', 11400, 1)
+console.log(f1.getSalario(), f2.getSalario())
+
+
+// Object.Create
+const filha = Object.create(null);
+filha.nome = 'Ana'
+console.log(filha)
+
+
+// Uma funcao famosa que retorna Objecto...
+const fromJson = JSON.parse('{"info": "Sou um JSON"}')
+console.log(fromJson.info)
