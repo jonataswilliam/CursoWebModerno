@@ -13,10 +13,27 @@ console.log(obj1, obj2)
 
 const nomeAttr = "Nota"
 const valorAttr = 7.87
-const obj3[nomeAttr] = valorAttr
+
+const obj3 = {}
+obj3[nomeAttr] = valorAttr
 console.log(obj3)
 
 // Pegará o valor que está dentro de nomeAttr e passará a ser o nome do atributo no objeto.
 const obj4 = {[nomeAttr]: valorAttr}
 console.log(obj4)
 
+
+const obj5 = {
+ 
+    // Antes do Ecma2015 era necessário criar funcoes utilizando uma funcao anonima.   
+    funncao: function () {
+        // ...
+    },
+    
+    // Depois do 2015 não é necessário mais.
+    funcao2() {
+        
+    }
+}
+
+console.log(obj5)
