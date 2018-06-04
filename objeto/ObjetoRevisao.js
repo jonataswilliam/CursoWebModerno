@@ -32,9 +32,11 @@ const carro = {
 
 carro.proprietario.endereco.numero = 1000
 carro['proprietario']['endereco']['logradouro'] = 'Av Gigante'
-console.log(caroo)
+console.log(carro)
 
 delete carro.condutores
 delete carro.proprietario.endereco
 delete carro.calcularValorSeguro
 console.log(carro)
+console.log(carro.condutores)
+// console.log(carri.condutores.length)
