@@ -25,4 +25,4 @@ console.log (getPreco.apply(carro))
 console.log (getPreco.call(carro, 0.17, 'R$'))
 
 // Com a funcao aplly passamos os parametros dentro de um array
-console.log (getPreco.call(carro, [0.17, 'US$']))
+console.log (getPreco.apply(carro, [0.17, 'US$']))
