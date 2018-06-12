@@ -14,7 +14,7 @@ dobro = (a) => {
 // Forma 2. Forma reduzida. Podemos tirar os parenteses quando só teremos 1 parametro na função e não utilizamos returna. É muito utilizado para funcoes de uma única linha.
 dobro = a => a * 2 //Retorno implícito
 
-// Com o uso de Arrow Functions temos a ideia de sempre utilizarmos funcoes menores e específicas.
+// Com a implementacao de Arrow Functions temos a ideia de sempre utilizarmos funcoes menores e específicas.
 
 console.log(dobro(Math.PI))
 
@@ -23,4 +23,9 @@ let ola = function () {
     return 'Olá'
 }
 
+//Quando temos uma funcao que nao temos parametros temos que colocar os () vazios.
 ola = () => 'Olá'
+// Ou podemos fazer 
+ola = _ => 'Olá'
+// Por ser mais curto, mas isso contará como parametro passado.
+
