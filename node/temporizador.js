@@ -13,6 +13,7 @@ setTimeout(function () {
 
 // Agendamento de tarefa de outra maneira, utilizando o schedule.RecurrenceRule()
 const regra = new schedule.RecurrenceRule()
+// Dias da semana (De segunda a sexta)
 regra.dayOfWeek = [new schedule.Range(1,5)]
 regra.hour = 14
 regra.second = 10
