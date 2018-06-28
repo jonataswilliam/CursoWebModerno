@@ -12,6 +12,7 @@ console.log(tecnologias.react)
 console.log(tecnologias.get('react'))
 console.log(tecnologias.get('react').framework)
 
+// Criando um map atraves de uma matriz
 const chavesVariadas = new Map([
     [function () { }, 'Função'],
     [{}, 'Objeto'],
