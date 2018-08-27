@@ -42,6 +42,8 @@ for ( let [ch, vlr] of assuntoMap.entries()) {
     console.log(ch, vlr)
 }
 
+
+
 const s = new Set(['a', 'b', 'c'])
 
 for (let letra of s) {

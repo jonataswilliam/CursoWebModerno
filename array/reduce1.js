@@ -7,10 +7,11 @@ const alunos = [
 
 console.log(alunos.map(a => a.nota))
 
+
 const resultado = alunos.map(a => a.nota).reduce(function (acumulador, atual) {
     console.log(acumulador, atual)
     return acumulador + atual
-}, 0)
+}, 0) // O segundo valor, se informado na chamado do reduce, será o valor inicial do acumulador. Neste exemplo, estamos iniciando com valor 0.
 
 console.log(resultado)
 
